@@ -1,7 +1,5 @@
-import { prisma } from '@/lib/prisma'
 import { FastifyRequest, FastifyReply } from 'fastify'
 import { z } from 'zod'
-import { hash } from 'bcryptjs'
 import { RegisterUseCase } from '@/use-cases/register'
 
 export async function register(request: FastifyRequest, reply: FastifyReply) {
