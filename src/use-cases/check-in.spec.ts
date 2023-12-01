@@ -87,7 +87,6 @@ describe('Check-in Use Case', () => {
     expect(checkIn.id).toEqual(expect.any(String))
   })
 
-  // -12.9016582,-38.4296388,15z
   it('should not be able to check in on distant gym', async () => {
     gymsRepository.items.push({
       id: 'gym-02',
